@@ -1,0 +1,121 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
+
+header {
+  background: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #eee;
+}
+nav a {
+  margin-right: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #007bff;
+}
+
+.home-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+}
+.home-section .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 1rem;
+}
+.home-section h1 span {
+  color: #ffd700;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+section h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #007bff;
+  display: block;
+  margin: 0.5rem auto 0;
+}
+
+.about-section p {
+  max-width: 700px;
+  margin: 1rem auto;
+}
+.about-section ul {
+  max-width: 700px;
+  margin: 1rem auto;
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card img {
+  width: 100%;
+  display: block;
+}
+.project-card h3 {
+  margin: 1rem;
+}
+.project-card p {
+  margin: 0 1rem 1rem;
+}
+.project-card .btn {
+  display: inline-block;
+  margin: 0 1rem 1rem;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.project-card .btn:hover {
+  background: #0056b3;
+}
+
+.contact-section p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+footer {
+  background: #f8f9fa;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
